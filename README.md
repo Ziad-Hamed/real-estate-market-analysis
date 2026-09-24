@@ -1,6 +1,12 @@
 # Real Estate Market Analysis
 
-An exploratory data analysis project examining property sales, customer profiles, and market patterns across five buildings. The main analysis is contained in [`real_estate_market_analysis.ipynb`](real_estate_market_analysis.ipynb).
+## Background 
+
+The real estate market is a complex and dynamic entity of great interest for professionals in the field, investors, policymakers, and data analysts that wish to thoroughly understand the market conditions and customer behavior and make informed decisions. In our Real Estate Market Analysis with Python project, the client—a leading company in the industry—has collected data on properties and their customers and wishes you to help them with the real estate analysis. 
+
+## Project Objective
+
+This Real Estate Market Analysis with Python project aims to preprocess, analyze, and visualize the real estate property data, thereby generating meaningful insights about property transactions and customer profiles. The main analysis is contained in [`real_estate_market_analysis.ipynb`](real_estate_market_analysis.ipynb).
 
 ## Project Overview
 
@@ -8,7 +14,7 @@ The notebook combines customer and property data to investigate:
 
 - Property sales by building and year
 - Average area, price, and deal satisfaction by building
-- Sales distribution by country and US state
+- Sales distribution by country and state
 - Sales across customer age intervals
 - The relationship between customer age and property price for sold properties purchased by individuals
 
@@ -18,23 +24,19 @@ The project is designed as a practical data-cleaning and exploratory-analysis ex
 
 The project uses two CSV files:
 
-- [`customers.csv`](customers.csv): 162 customer records, including customer type, demographics, location, purchase purpose, mortgage status, satisfaction, and lead source.
-- [`properties.csv`](properties.csv): 267 property records, including building, property type, area, price, sale date, sale status, and customer ID.
-
-The source data contains five buildings. At the property level, there are 195 sold properties and 72 unsold properties. Recorded property sales span 2005 through 2007.
+- [`customers.csv`](customers.csv): comprises customer details, such as customer ID, entity, name, surname, and more.
+- [`properties.csv`](properties.csv): contains details about the properties, including ID, building details, sale date, etc.
 
 ## Analysis Workflow
 
 `real_estate_market_analysis.ipynb` follows this general workflow:
 
 1. Import the analysis libraries.
-2. Load the customer and property CSV files.
-3. Remove redundant index columns and resolve BOM-affected column names.
-4. Standardize categorical fields and convert dates, prices, and identifiers to usable types.
-5. Encode selected categorical variables, such as individual/company customers, sex, mortgage status, and sold/unsold status.
-6. Merge property records with customer records using `customerid`.
-7. Produce descriptive statistics and grouped summaries.
-8. Visualize sales, pricing, customer age, and geographic patterns.
+2. Load data files.
+3. Data cleaning and preprocessing
+4. Merge property records with customer records using `customerid`.
+5. Produce descriptive statistics and grouped summaries.
+6. Visualize sales, pricing, customer age, and geographic patterns.
 
 ## Main Outputs
 
