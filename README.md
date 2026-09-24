@@ -24,8 +24,8 @@ The project is designed as a practical data-cleaning and exploratory-analysis ex
 
 The project uses two CSV files:
 
-- [`customers.csv`](customers.csv): comprises customer details, such as customer ID, entity, name, surname, and more.
-- [`properties.csv`](properties.csv): contains details about the properties, including ID, building details, sale date, etc.
+- [`customers.csv`](data/customers.csv): comprises customer details, such as customer ID, entity, name, surname, and more.
+- [`properties.csv`](data/properties.csv): contains details about the properties, including ID, building details, sale date, etc.
 
 ## Analysis Workflow
 
